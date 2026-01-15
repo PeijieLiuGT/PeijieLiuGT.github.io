@@ -1,0 +1,817 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/icon.jpg">
+  <link rel="icon" href="/images/icon.jpg">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="rgba(255, 255, 255, 0.95)">
+  <meta name="author" content="Peijie Liu">
+  <meta name="keywords" content="electrical engineering, Georgia Tech, analog circuits, FPGA, robotics, PCB design, audiophile, DIY projects">
+  
+    <meta name="description" content="A custom GPS-disciplined oscillator achieving 40 parts-per-billion frequency accuracy through innovative control algorithms and thermal management.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GPS-Disciplined Oscillator (GPSDO) - Achieving 40ppb Accuracy">
+<meta property="og:url" content="https://peijieliugt.github.io/2024/10/15/gpsdo-project/index.html">
+<meta property="og:site_name" content="Peijie Liu - Electrical Engineering Portfolio">
+<meta property="og:description" content="A custom GPS-disciplined oscillator achieving 40 parts-per-billion frequency accuracy through innovative control algorithms and thermal management.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://peijieliugt.github.io/2024/10/15/gpsdo-project/gpsdolayout.jpg">
+<meta property="og:image" content="https://peijieliugt.github.io/2024/10/15/gpsdo-project/gpsdoprog.png">
+<meta property="og:image" content="https://peijieliugt.github.io/2024/10/15/gpsdo-project/gpsdoactual.jpg">
+<meta property="og:image" content="https://peijieliugt.github.io/2024/10/15/gpsdo-project/gpsdoresult1.jpg">
+<meta property="og:image" content="https://peijieliugt.github.io/2024/10/15/gpsdo-project/gpsdoresult2.jpg">
+<meta property="article:published_time" content="2024-10-15T04:00:00.000Z">
+<meta property="article:modified_time" content="2025-01-10T05:00:00.000Z">
+<meta property="article:author" content="Peijie Liu">
+<meta property="article:tag" content="Embedded Systems">
+<meta property="article:tag" content="PCB Design">
+<meta property="article:tag" content="STM32">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://peijieliugt.github.io/2024/10/15/gpsdo-project/gpsdolayout.jpg">
+  
+  
+  
+  <title>GPS-Disciplined Oscillator (GPSDO) - Achieving 40ppb Accuracy - Peijie Liu - Electrical Engineering Portfolio</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"peijieliugt.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="Peijie Liu - Electrical Engineering Portfolio" type="application/atom+xml">
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Peijie Liu</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/resume/" target="_self">
+                <i class="iconfont icon-document-fill"></i>
+                <span>Resume</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Project Posts</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/archives/" target="_self">
+                    
+                    <span>All Posts</span>
+                  </a>
+                
+                  
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/Technical-Projects/" target="_self">
+                    
+                    <span>Technical Projects</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/Stories-Writing/" target="_self">
+                    
+                    <span>Stories & Writing</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/Tech-Notes/" target="_self">
+                    
+                    <span>Tech Notes</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/skills/" target="_self">
+                <i class="iconfont icon-tools-fill"></i>
+                <span>Skills</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/contact/" target="_self">
+                <i class="iconfont icon-mail-fill"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/images/background.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="GPS-Disciplined Oscillator (GPSDO) - Achieving 40ppb Accuracy"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-10-15 00:00" pubdate>
+          October 15, 2024
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.5k words
+        
+      </span>
+    
+
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">GPS-Disciplined Oscillator (GPSDO) - Achieving 40ppb Accuracy</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <details class="ai-disclaimer">
+<summary><strong>📝 AI Assistance Disclosure</strong> (click to expand)</summary>
+
+<p>This technical documentation has been proofread by Claude (Anthropic) for readability, grammar, and formatting consistency. All technical content, project details, circuit designs, measurements, and conclusions have been verified and approved by the author.</p>
+<p><strong>Interested in my personal writing style?</strong> Check out my <a href="/categories/Stories-Writing/">Stories &amp; Writing</a> category for 100% human-authored content.</p>
+</details>
+
+<hr>
+<h2 id="Project-Overview"><a href="#Project-Overview" class="headerlink" title="Project Overview"></a>Project Overview</h2><p>The GPS-Disciplined Oscillator (GPSDO) project aims to create a precision frequency reference by locking a high-quality oven-controlled crystal oscillator (OCXO) to GPS timing signals. This project achieved <strong>40 parts-per-billion (ppb)</strong> long-term frequency accuracy—exceeding my initial 10ppb target by a factor of 4.</p>
+<img src="/2024/10/15/gpsdo-project/gpsdolayout.jpg" srcset="/img/loading.gif" lazyload class="" title="GPSDO Mk.1 PCB 3D Render in Altium Designer">
+
+<h2 id="System-Architecture"><a href="#System-Architecture" class="headerlink" title="System Architecture"></a>System Architecture</h2><p>The system consists of several key components:</p>
+<h3 id="Core-Hardware"><a href="#Core-Hardware" class="headerlink" title="Core Hardware"></a>Core Hardware</h3><ul>
+<li><strong>Microcontroller</strong>: STM32F030 running at 48MHz</li>
+<li><strong>OCXO</strong>: Isotemp OCXO134-10 with ±50ppb initial accuracy</li>
+<li><strong>GPS Module</strong>: u-blox NEO-6M with 1PPS output</li>
+<li><strong>DAC</strong>: 16-bit SPI DAC for fine frequency adjustment</li>
+<li><strong>Power Management</strong>: Custom LDO design with thermal isolation</li>
+</ul>
+<img src="/2024/10/15/gpsdo-project/gpsdoprog.png" srcset="/img/loading.gif" lazyload class="" title="Firmware structure showing the control loop implementation">
+
+<h3 id="Control-Algorithm"><a href="#Control-Algorithm" class="headerlink" title="Control Algorithm"></a>Control Algorithm</h3><p>The heart of the system is a custom <strong>diverging control algorithm</strong> with dead-zone handling:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">static</span> <span class="hljs-type">uint16_t</span> current_dac = <span class="hljs-number">0x8000</span>;<br><br><span class="hljs-type">void</span> <span class="hljs-title function_">set_dac</span><span class="hljs-params">(<span class="hljs-type">int</span> inc)</span> &#123;<br>  current_dac += inc &lt;&lt; <span class="hljs-number">4</span>;<br>  HAL_GPIO_WritePin(ADC_CS_GPIO_Port, ADC_CS_Pin, GPIO_PIN_RESET);<br>  <span class="hljs-type">uint8_t</span> d[<span class="hljs-number">3</span>] = &#123;<span class="hljs-number">8</span>, current_dac &gt;&gt; <span class="hljs-number">8</span> &amp; <span class="hljs-number">0xff</span>, current_dac &amp; <span class="hljs-number">0xff</span>&#125;;<br>  HAL_SPI_Transmit(&amp;hspi1, d, <span class="hljs-number">3</span>, <span class="hljs-number">0</span>);<br>  HAL_GPIO_WritePin(ADC_CS_GPIO_Port, ADC_CS_Pin, GPIO_PIN_SET);<br>&#125;<br><br><span class="hljs-type">void</span> <span class="hljs-title function_">update_dac</span><span class="hljs-params">()</span> &#123;<br>  <span class="hljs-type">int</span> sum = <span class="hljs-number">0</span>;<br>  <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; RING_SIZE; i++) &#123;<br>    sum += ring[i];<br>  &#125;<br>  set_dac(-sum / RING_SIZE);<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>The algorithm uses a ring buffer to average phase measurements, implementing a form of PI control with adjustable gain.</p>
+<h2 id="Technical-Challenges-Solutions"><a href="#Technical-Challenges-Solutions" class="headerlink" title="Technical Challenges &amp; Solutions"></a>Technical Challenges &amp; Solutions</h2><h3 id="Challenge-1-Component-Substitution"><a href="#Challenge-1-Component-Substitution" class="headerlink" title="Challenge 1: Component Substitution"></a>Challenge 1: Component Substitution</h3><p>The original BOM specified a TI REF5050 voltage reference, but supply chain issues forced a substitution. The replacement part had different thermal characteristics, causing drift issues.</p>
+<p><strong>Solution</strong>: Implemented a “hot-wire” resistor fix to compensate for the thermal coefficient mismatch, adjusting the temperature-to-voltage relationship at the firmware level.</p>
+<h3 id="Challenge-2-Control-Loop-Instability"><a href="#Challenge-2-Control-Loop-Instability" class="headerlink" title="Challenge 2: Control Loop Instability"></a>Challenge 2: Control Loop Instability</h3><p>Initial testing revealed oscillation in the control loop when the OCXO approached lock.</p>
+<p><strong>Solution</strong>: Developed a custom diverging algorithm with dead-zone control. When phase error falls within ±2 counts, the system stops adjusting, preventing hunting behavior.</p>
+<img src="/2024/10/15/gpsdo-project/gpsdoactual.jpg" srcset="/img/loading.gif" lazyload class="" title="The assembled GPSDO Mk.1 board during testing">
+
+<h2 id="Measurement-Results"><a href="#Measurement-Results" class="headerlink" title="Measurement Results"></a>Measurement Results</h2><p>Testing was performed using Keysight CXA signal analyzer and EXG vector signal generator as reference.</p>
+<img src="/2024/10/15/gpsdo-project/gpsdoresult1.jpg" srcset="/img/loading.gif" lazyload class="" title="Spectrum analysis showing the 10MHz output - 100Hz span">
+
+<p>The spectrum analysis shows:</p>
+<ul>
+<li><strong>Center Frequency</strong>: 10.000000 MHz (exact)</li>
+<li><strong>Output Power</strong>: +12.06 dBm</li>
+<li><strong>Phase Noise</strong>: Better than -70 dBc&#x2F;Hz at 1Hz offset</li>
+</ul>
+<img src="/2024/10/15/gpsdo-project/gpsdoresult2.jpg" srcset="/img/loading.gif" lazyload class="" title="Close-in spectrum with 10Hz span showing excellent stability">
+
+<p>With a 10Hz span and 1Hz resolution bandwidth, the signal shows excellent short-term stability with no visible sidebands or spurious content.</p>
+<h2 id="PCB-Design-Notes"><a href="#PCB-Design-Notes" class="headerlink" title="PCB Design Notes"></a>PCB Design Notes</h2><p>The PCB was designed in <strong>Altium Designer</strong> with the following considerations:</p>
+<ul>
+<li><strong>4-layer stackup</strong>: Signal-Ground-Power-Signal for optimal EMI performance</li>
+<li><strong>Thermal isolation</strong>: The OCXO section is thermally isolated from the MCU and GPS module</li>
+<li><strong>Star grounding</strong>: Analog and digital grounds meet at a single point under the DAC</li>
+<li><strong>Controlled impedance</strong>: 50Ω traces for the RF output path</li>
+</ul>
+<h2 id="Future-Improvements"><a href="#Future-Improvements" class="headerlink" title="Future Improvements"></a>Future Improvements</h2><ol>
+<li><strong>Kalman Filter Implementation</strong>: Replace the simple averaging with a Kalman filter for better noise rejection</li>
+<li><strong>Custom PCB Rev 2</strong>: Fix the thermal issues with proper copper pour optimization  </li>
+<li><strong>GPS Holdover</strong>: Add a rubidium backup for GPS signal loss scenarios</li>
+<li><strong>Remote Monitoring</strong>: Add WiFi&#x2F;Ethernet for SNMP-based monitoring</li>
+</ol>
+<h2 id="Applications"><a href="#Applications" class="headerlink" title="Applications"></a>Applications</h2><p>This GPSDO is suitable for:</p>
+<ul>
+<li>Amateur radio frequency calibration</li>
+<li>Test equipment reference</li>
+<li>Time-nuts experiments</li>
+<li>SDR frequency stabilization</li>
+</ul>
+<h2 id="Resources"><a href="#Resources" class="headerlink" title="Resources"></a>Resources</h2><ul>
+<li><strong>Schematic</strong>: Available on request</li>
+<li><strong>Firmware</strong>: <a href="#">GitHub Repository</a> (coming soon)</li>
+<li><strong>Bilibili Video</strong>: <a href="#">Design walkthrough</a></li>
+</ul>
+<hr>
+<p><em>Have questions about this project? Feel free to reach out via the <a href="/contact/">Contact</a> page.</em></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Technical-Projects/" class="category-chain-item">Technical Projects</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Embedded-Systems/" class="print-no-link">#Embedded Systems</a>
+      
+        <a href="/tags/STM32/" class="print-no-link">#STM32</a>
+      
+        <a href="/tags/PCB-Design/" class="print-no-link">#PCB Design</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>GPS-Disciplined Oscillator (GPSDO) - Achieving 40ppb Accuracy</div>
+      <div>https://peijieliugt.github.io/2024/10/15/gpsdo-project/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>Peijie Liu</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>October 15, 2024</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025/01/10/template-tech-notes/" title="Template: Tech Note Title">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Template: Tech Note Title</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <div> © 2026 Peijie Liu | Built with  <a href="https://hexo.io" target="_blank" rel="nofollow noopener"> <span>Hexo</span> </a> &  <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <span>Fluid</span> </a> </div> <div> <a href="mailto:pliu369@gatech.edu">pliu369@gatech.edu</a> |  <a href="https://github.com/peijieliugt" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/peijie-liu-gatech" target="_blank">LinkedIn</a> </div> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>

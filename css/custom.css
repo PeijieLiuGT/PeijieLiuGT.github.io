@@ -1,0 +1,217 @@
+/* 导航菜单分割线 */
+.menu-divider-text {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+  padding: 5px 0;
+  cursor: default;
+  pointer-events: none;
+}
+
+.menu-divider-text:hover {
+  background-color: transparent !important;
+}
+/* AI Disclaimer Styling for Fluid Theme */
+/* Add this to your custom CSS file: source/css/custom.css */
+/* Or add to _config.fluid.yml under custom_css */
+
+/* Base disclaimer styling */
+.ai-disclaimer {
+  margin: 1.5rem 0 2rem 0;
+  padding: 0;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 1px solid #dee2e6;
+  font-size: 0.9rem;
+}
+
+/* Summary (the clickable part) */
+.ai-disclaimer summary {
+  padding: 12px 16px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #495057;
+  transition: all 0.2s ease;
+}
+
+.ai-disclaimer summary::-webkit-details-marker {
+  display: none;
+}
+
+.ai-disclaimer summary::before {
+  content: "▶";
+  font-size: 0.7em;
+  transition: transform 0.2s ease;
+}
+
+.ai-disclaimer[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.ai-disclaimer summary:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* Expanded content */
+.ai-disclaimer p {
+  margin: 0;
+  padding: 0 16px 16px 16px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.ai-disclaimer a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.ai-disclaimer a:hover {
+  text-decoration: underline;
+}
+
+/* Special styling for 100% human content */
+.ai-disclaimer.human-only {
+  background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
+  border-color: #9ae6b4;
+}
+
+.ai-disclaimer.human-only summary {
+  color: #276749;
+}
+
+.ai-disclaimer.human-only p {
+  color: #2f855a;
+}
+
+/* Dark mode support (Fluid theme) */
+[data-user-color-scheme="dark"] .ai-disclaimer {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  border-color: #4a5568;
+}
+
+[data-user-color-scheme="dark"] .ai-disclaimer summary {
+  color: #e2e8f0;
+}
+
+[data-user-color-scheme="dark"] .ai-disclaimer p {
+  color: #a0aec0;
+}
+
+[data-user-color-scheme="dark"] .ai-disclaimer.human-only {
+  background: linear-gradient(135deg, #1c4532 0%, #22543d 100%);
+  border-color: #276749;
+}
+
+[data-user-color-scheme="dark"] .ai-disclaimer.human-only summary {
+  color: #9ae6b4;
+}
+
+[data-user-color-scheme="dark"] .ai-disclaimer.human-only p {
+  color: #68d391;
+}
+
+/* Category filter buttons (optional enhancement for index page) */
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.category-filter a {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: #f1f3f5;
+  color: #495057;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.category-filter a:hover {
+  background: #e9ecef;
+  border-color: #ced4da;
+}
+
+.category-filter a.active {
+  background: #228be6;
+  color: white;
+}
+
+[data-user-color-scheme="dark"] .category-filter a {
+  background: #2d3748;
+  color: #e2e8f0;
+}
+
+[data-user-color-scheme="dark"] .category-filter a:hover {
+  background: #4a5568;
+}
+
+/* Navbar 顶部时的背景 */
+.navbar.scrolling-navbar {
+  background-color: rgba(255, 255, 255, 0.65) !important;
+}
+
+/* 滚动后的样式保持不变 */
+.navbar.top-nav-collapse {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* 深色模式 */
+[data-user-color-scheme="dark"] .navbar {
+  background-color: rgba(26, 32, 44, 0.65) !important;
+}
+
+[data-user-color-scheme="dark"] .navbar.top-nav-collapse {
+  background-color: rgba(26, 32, 44, 0.95) !important;
+}
+
+/* ========== Navbar 下拉菜单样式 ========== */
+
+/* 亮色模式 - 下拉菜单 */
+.navbar .dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: #333 !important;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  color: #000 !important;
+}
+
+/* 暗色模式 - 下拉菜单 */
+[data-user-color-scheme="dark"] .navbar .dropdown-menu {
+  background-color: rgba(26, 32, 44, 0.9) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+[data-user-color-scheme="dark"] .navbar .dropdown-menu .dropdown-item {
+  color: #e2e8f0 !important;
+}
+
+[data-user-color-scheme="dark"] .navbar .dropdown-menu .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+}
+
+/* 首页只显示前 2 篇文章 */
+.index-page .post-list .post-card:nth-child(n+1) {
+  display: none !important;
+}
+
+.index-page .pagination {
+  display: none !important;
+}

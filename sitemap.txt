@@ -12,11 +12,11 @@ https://peijieliugt.github.io/about/index.html
 https://peijieliugt.github.io/
 https://peijieliugt.github.io/tags/Personal/
 https://peijieliugt.github.io/tags/Reflection/
+https://peijieliugt.github.io/tags/Quick-Note/
+https://peijieliugt.github.io/tags/TIL/
 https://peijieliugt.github.io/tags/Embedded-Systems/
 https://peijieliugt.github.io/tags/STM32/
 https://peijieliugt.github.io/tags/PCB-Design/
-https://peijieliugt.github.io/tags/Quick-Note/
-https://peijieliugt.github.io/tags/TIL/
 https://peijieliugt.github.io/categories/Stories-Writing/
-https://peijieliugt.github.io/categories/Technical-Projects/
 https://peijieliugt.github.io/categories/Tech-Notes/
+https://peijieliugt.github.io/categories/Technical-Projects/

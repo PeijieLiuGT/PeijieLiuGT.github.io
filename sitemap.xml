@@ -124,6 +124,20 @@
   </url>
   
   <url>
+    <loc>https://peijieliugt.github.io/tags/Quick-Note/</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijieliugt.github.io/tags/TIL/</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://peijieliugt.github.io/tags/Embedded-Systems/</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -144,20 +158,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://peijieliugt.github.io/tags/Quick-Note/</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijieliugt.github.io/tags/TIL/</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -168,14 +168,14 @@
   </url>
   
   <url>
-    <loc>https://peijieliugt.github.io/categories/Technical-Projects/</loc>
+    <loc>https://peijieliugt.github.io/categories/Tech-Notes/</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://peijieliugt.github.io/categories/Tech-Notes/</loc>
+    <loc>https://peijieliugt.github.io/categories/Technical-Projects/</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

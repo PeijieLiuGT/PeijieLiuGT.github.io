@@ -536,6 +536,12 @@ html {
   animation: pulseGlow 4s ease-in-out infinite;
 }
 
+/* ---- Hide Tags & Archives sidebar on homepage ---- */
+.page:not([class*="type-"]) .card-tags,
+.page:not([class*="type-"]) .card-archives {
+  display: none !important;
+}
+
 /* ---- Responsive ---- */
 @media screen and (max-width: 768px) {
   .contact-cards {

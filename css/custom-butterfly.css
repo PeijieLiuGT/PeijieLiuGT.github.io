@@ -796,13 +796,32 @@
    ============================================ */
 
 /* About page: side-by-side image rows */
-/* Override Butterfly's default img margin inside flex containers */
-#article-container div[style*="display: flex"] img {
+/* About page: side-by-side image rows */
+/* Fancybox wraps each <img> in an <a> at runtime, so we style the <a> as flex item */
+.about-flex-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.about-flex-row > a,
+.about-flex-row > img {
+  width: 45% !important;
   margin: 0 !important;
 }
 
-#article-container div[style*="display: flex"] a {
+.about-flex-row > a > img {
+  width: 100% !important;
+  height: auto !important;
   margin: 0 !important;
+  border-radius: 12px !important;
+  object-fit: cover;
+}
+
+/* Also style direct img children (before fancybox wraps them) */
+.about-flex-row > img {
+  border-radius: 12px !important;
+  height: auto !important;
 }
 
 /* ---- Blockquote styling for article pages ---- */

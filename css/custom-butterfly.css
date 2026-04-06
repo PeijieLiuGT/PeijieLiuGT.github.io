@@ -44,6 +44,16 @@
 [data-theme="dark"] #web_bg,
 [data-theme="dark"] body {
   background: linear-gradient(135deg, #0c1445 0%, #1a0a3e 25%, #0d1b3e 50%, #0a1628 100%) !important;
+  background-attachment: fixed !important;
+}
+
+/* Prevent white flash on overscroll / fast scroll */
+html {
+  background: #0a1628;
+}
+
+[data-theme="light"] html {
+  background: #fff;
 }
 
 /* ---- Navigation Bar Glassmorphism ---- */

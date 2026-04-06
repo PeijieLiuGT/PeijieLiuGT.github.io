@@ -131,14 +131,22 @@ function initCustomEffects() {
   });
 
   /* ========================================
-     Parallax on banner image
+     Parallax on banner image (GPU-accelerated)
      ======================================== */
   var header = document.getElementById('page-header');
   if (header) {
+    header.style.willChange = 'transform';
+    var ticking = false;
     window.addEventListener('scroll', function () {
-      var scrolled = window.pageYOffset;
-      if (scrolled < window.innerHeight) {
-        header.style.backgroundPositionY = scrolled * 0.4 + 'px';
+      if (!ticking) {
+        requestAnimationFrame(function () {
+          var scrolled = window.pageYOffset;
+          if (scrolled < window.innerHeight) {
+            header.style.transform = 'translate3d(0,' + scrolled * 0.3 + 'px,0)';
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     }, { passive: true });
   }

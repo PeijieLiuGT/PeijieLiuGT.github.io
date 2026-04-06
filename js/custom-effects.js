@@ -131,18 +131,19 @@ function initCustomEffects() {
   });
 
   /* ========================================
-     Parallax on banner image (GPU-accelerated)
+     Parallax on banner image (background-position)
+     Using backgroundPositionY instead of transform to avoid
+     breaking position:fixed on child #nav element.
      ======================================== */
   var header = document.getElementById('page-header');
   if (header) {
-    header.style.willChange = 'transform';
     var ticking = false;
     window.addEventListener('scroll', function () {
       if (!ticking) {
         requestAnimationFrame(function () {
           var scrolled = window.pageYOffset;
           if (scrolled < window.innerHeight) {
-            header.style.transform = 'translate3d(0,' + scrolled * 0.3 + 'px,0)';
+            header.style.backgroundPositionY = 'calc(50% + ' + scrolled * 0.3 + 'px)';
           }
           ticking = false;
         });

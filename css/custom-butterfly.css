@@ -41,27 +41,45 @@
 }
 
 /* ---- Dark mode background ---- */
-[data-theme="dark"] #web_bg,
-[data-theme="dark"] body {
+/* Gradient on html so canvas_nest (z-index:-1) sits between bg and content */
+html[data-theme="dark"] {
   background: linear-gradient(135deg, #0c1445 0%, #1a0a3e 25%, #0d1b3e 50%, #0a1628 100%) !important;
   background-attachment: fixed !important;
 }
 
-/* Prevent white flash on overscroll / fast scroll */
-html {
-  background: #0a1628;
+[data-theme="dark"] body {
+  background: transparent !important;
 }
 
-/* Canvas nest: stay above background but don't block clicks */
-canvas[id^="c_n"] {
-  pointer-events: none !important;
-}
-
-[data-theme="light"] html {
+html[data-theme="light"] {
   background: #fff;
 }
 
 /* ---- Navigation Bar Glassmorphism ---- */
+#nav {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Nav hide on scroll-down, show on scroll-up (overrides Butterfly's .fixed always-visible behavior) */
+#page-header.nav-fixed.fixed:not(.nav-visible) #nav {
+  top: -60px !important;
+  transition: transform 0.35s ease, top 0.35s ease !important;
+}
+
+#page-header.nav-fixed.fixed.nav-visible #nav {
+  top: 0 !important;
+  transition: all 0.35s ease !important;
+}
+
+/* Light mode: glassmorphism when scrolled past banner */
+#page-header.nav-fixed #nav {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Dark mode nav */
 [data-theme="dark"] #nav {
   backdrop-filter: blur(20px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
@@ -69,13 +87,9 @@ canvas[id^="c_n"] {
   border-bottom: 1px solid rgba(102, 126, 234, 0.2) !important;
 }
 
-[data-theme="dark"] #nav.fixed {
+[data-theme="dark"] #page-header.nav-fixed #nav {
   background: rgba(15, 23, 42, 0.92) !important;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3) !important;
-}
-
-#nav {
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 #nav a {

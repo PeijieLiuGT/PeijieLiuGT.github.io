@@ -52,6 +52,11 @@ html {
   background: #0a1628;
 }
 
+/* Canvas nest: stay above background but don't block clicks */
+canvas[id^="c_n"] {
+  pointer-events: none !important;
+}
+
 [data-theme="light"] html {
   background: #fff;
 }

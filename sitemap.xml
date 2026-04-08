@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://peijie.dev/tags/index.html</loc>
+    
+    <lastmod>2026-04-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://peijie.dev/resume/index.html</loc>
     
     <lastmod>2026-04-08</lastmod>
@@ -12,15 +21,6 @@
   
   <url>
     <loc>https://peijie.dev/skills/index.html</loc>
-    
-    <lastmod>2026-04-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/tags/index.html</loc>
     
     <lastmod>2026-04-08</lastmod>
     
@@ -101,6 +101,15 @@
   </url>
   
   <url>
+    <loc>https://peijie.dev/2025/09/18/essay-digital-outcast/</loc>
+    
+    <lastmod>2026-04-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://peijie.dev/2025/08/23/essay-letter-to-instructor/</loc>
     
     <lastmod>2026-04-08</lastmod>
@@ -138,15 +147,6 @@
   
   <url>
     <loc>https://peijie.dev/2024/08/27/essay-why-engineering/</loc>
-    
-    <lastmod>2026-04-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/2025/09/18/essay-digital-outcast/</loc>
     
     <lastmod>2026-04-08</lastmod>
     

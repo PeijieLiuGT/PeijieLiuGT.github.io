@@ -1,6 +1,6 @@
+https://peijie.dev/tags/index.html
 https://peijie.dev/resume/index.html
 https://peijie.dev/skills/index.html
-https://peijie.dev/tags/index.html
 https://peijie.dev/about/index.html
 https://peijie.dev/archives/index.html
 https://peijie.dev/career/index.html
@@ -9,12 +9,12 @@ https://peijie.dev/contact/index.html
 https://peijie.dev/2026/04/05/project-usb-can-uart/
 https://peijie.dev/2026/03/16/project-hitl/
 https://peijie.dev/2026/01/26/note-TackyAstroach/
+https://peijie.dev/2025/09/18/essay-digital-outcast/
 https://peijie.dev/2025/08/23/essay-letter-to-instructor/
 https://peijie.dev/2024/07/28/essay-online-community/
 https://peijie.dev/2024/09/01/essay-risk-taker/
 https://peijie.dev/2024/08/03/essay-vex-community/
 https://peijie.dev/2024/08/27/essay-why-engineering/
-https://peijie.dev/2025/09/18/essay-digital-outcast/
 https://peijie.dev/2022/01/12/note-DAC729-Vintage-R2R-Decoder/
 https://peijie.dev/2026/02/03/note-ServoShield/
 https://peijie.dev/2026/01/15/project-uChimera/

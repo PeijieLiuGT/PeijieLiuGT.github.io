@@ -19,12 +19,12 @@ function initCustomEffects() {
             '<div class="hero-subtitle">Innovation at the Intersection of Engineering and Experience</div>' +
             '<p>An <strong>Electrical Engineering</strong> sophomore (junior if counting in-progress courses) at <strong>Georgia Tech</strong> with a minor in <strong>Robotics</strong>, planning to graduate in December 2028.</p>' +
             '<p>I specialize in <strong>analog circuitry</strong>, <strong>FPGA/RISC embedded development</strong>, and <strong>robotics system integration</strong>, with extensive PCB layout experience using Altium Designer for power electronics, amplifiers, and avionics systems.</p>' +
-            '<p>I now serve as the Avionics <strong>Hardware-In-The-Loop Responsible Engineer</strong> for <a href="https://www.gtspaceprogram.com/" class="highlight-link">YJSP</a>.</p>' +
+            '<p>I now serve as the Avionics <strong>Hardware-In-The-Loop Responsible Engineer</strong> for <a href="https://www.gtspaceprogram.com/" class="highlight-link link-gold">YJSP</a>.</p>' +
             '<h3>My Passion</h3>' +
             '<p>My passion lies at the intersection of engineering innovation and practical application \u2013 from creating ultra-low distortion audio amplifiers to developing precision timing systems for aerospace applications.</p>' +
             '<p>Outside of academics, I\'m a dedicated audiophile and <strong>PADI Master Scuba Diver</strong>, committed to building high-fidelity audio equipment and innovative dive gadgets.</p>' +
             '<h3>Connect With Me</h3>' +
-            '<p>Check out my engineering journey through my <a href="https://space.bilibili.com/490557212" class="bilibili-link">Bilibili channel</a> where I share DIY projects and audiophile product reviews that have attracted over <strong>1 million views</strong> and <strong>~10K subscribers</strong>.</p>' +
+            '<p>Check out my engineering journey through my <a href="https://space.bilibili.com/490557212" class="bilibili-link link-bilibili">Bilibili channel</a> where I share DIY projects and audiophile product reviews that have attracted over <strong>1 million views</strong> and <strong>~10K subscribers</strong>.</p>' +
           '</div>' +
           '<div class="home-hero-avatar">' +
             '<img src="/images/peijieliu1.jpg" alt="Peijie Liu">' +
@@ -37,10 +37,10 @@ function initCustomEffects() {
           '</div>' +
         '</div>' +
         '<div class="home-hero-links">' +
-          '<a href="/about/" class="hero-btn"><i class="fas fa-user"></i> About Me</a>' +
-          '<a href="/categories/Technical-Projects/" class="hero-btn"><i class="fas fa-rocket"></i> Projects</a>' +
-          '<a href="/resume/" class="hero-btn"><i class="fas fa-file-alt"></i> Resume</a>' +
-          '<a href="/contact/" class="hero-btn"><i class="fas fa-envelope"></i> Contact</a>' +
+          '<a href="/about/" class="hero-btn link-info"><i class="fas fa-user"></i> About Me</a>' +
+          '<a href="/categories/Technical-Projects/" class="hero-btn link-projects"><i class="fas fa-rocket"></i> Projects</a>' +
+          '<a href="/resume/" class="hero-btn link-resume"><i class="fas fa-file-alt"></i> Resume</a>' +
+          '<a href="/contact/" class="hero-btn link-info"><i class="fas fa-envelope"></i> Contact</a>' +
         '</div>' +
       '</section>';
 
@@ -176,8 +176,8 @@ function initCustomEffects() {
      ======================================== */
   var typed = document.querySelector('.typed-cursor');
   if (typed) {
-    typed.style.color = '#00f7ff';
-    typed.style.textShadow = '0 0 10px rgba(0, 247, 255, 0.5)';
+    typed.style.color = '#f54e00';
+    typed.style.textShadow = '0 0 10px rgba(245, 78, 0, 0.5)';
   }
 
 }

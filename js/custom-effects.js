@@ -14,6 +14,9 @@ function initCustomEffects() {
     var heroHTML = '' +
       '<section class="home-hero">' +
         '<div class="home-hero-content">' +
+          '<div class="home-hero-avatar">' +
+            '<img src="/images/peijieliu1.jpg" alt="Peijie Liu">' +
+          '</div>' +
           '<div class="home-hero-text">' +
             '<h1>Hey, I\'m Peijie Liu</h1>' +
             '<div class="hero-subtitle">Innovation at the Intersection of Engineering and Experience</div>' +
@@ -25,9 +28,6 @@ function initCustomEffects() {
             '<p>Outside of academics, I\'m a dedicated audiophile and <strong>PADI Master Scuba Diver</strong>, committed to building high-fidelity audio equipment and innovative dive gadgets.</p>' +
             '<h3>Connect With Me</h3>' +
             '<p>Check out my engineering journey through my <a href="https://space.bilibili.com/490557212" class="bilibili-link link-bilibili">Bilibili channel</a> where I share DIY projects and audiophile product reviews that have attracted over <strong>1 million views</strong> and <strong>~10K subscribers</strong>.</p>' +
-          '</div>' +
-          '<div class="home-hero-avatar">' +
-            '<img src="/images/peijieliu1.jpg" alt="Peijie Liu">' +
           '</div>' +
         '</div>' +
         '<div class="home-hero-banner">' +

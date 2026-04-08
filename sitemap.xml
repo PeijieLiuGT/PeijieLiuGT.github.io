@@ -11,15 +11,6 @@
   </url>
   
   <url>
-    <loc>https://peijie.dev/skills/index.html</loc>
-    
-    <lastmod>2026-04-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://peijie.dev/tags/index.html</loc>
     
     <lastmod>2026-04-08</lastmod>
@@ -29,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://peijie.dev/career/index.html</loc>
+    <loc>https://peijie.dev/skills/index.html</loc>
     
     <lastmod>2026-04-08</lastmod>
     
@@ -47,6 +38,15 @@
   </url>
   
   <url>
+    <loc>https://peijie.dev/career/index.html</loc>
+    
+    <lastmod>2026-04-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://peijie.dev/contact/index.html</loc>
     
     <lastmod>2026-04-08</lastmod>
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://peijie.dev/archives/index.html</loc>
+    <loc>https://peijie.dev/about/index.html</loc>
     
     <lastmod>2026-04-08</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://peijie.dev/about/index.html</loc>
+    <loc>https://peijie.dev/archives/index.html</loc>
     
     <lastmod>2026-04-08</lastmod>
     
@@ -398,6 +398,27 @@
   </url>
   
   <url>
+    <loc>https://peijie.dev/tags/Testing/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijie.dev/tags/Signal-Analyzer/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijie.dev/tags/RF/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://peijie.dev/tags/Avionics/</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -426,21 +447,14 @@
   </url>
   
   <url>
-    <loc>https://peijie.dev/tags/Testing/</loc>
+    <loc>https://peijie.dev/tags/Energy-Harvesting/</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://peijie.dev/tags/Signal-Analyzer/</loc>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/tags/RF/</loc>
+    <loc>https://peijie.dev/tags/Medical-Devices/</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -455,20 +469,6 @@
   
   <url>
     <loc>https://peijie.dev/tags/CAN-Bus/</loc>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/tags/Energy-Harvesting/</loc>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/tags/Medical-Devices/</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

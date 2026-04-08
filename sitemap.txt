@@ -12,8 +12,8 @@ https://peijie.dev/2026/01/26/note-TackyAstroach/
 https://peijie.dev/2025/08/23/essay-letter-to-instructor/
 https://peijie.dev/2024/07/28/essay-online-community/
 https://peijie.dev/2024/09/01/essay-risk-taker/
-https://peijie.dev/2024/08/27/essay-why-engineering/
 https://peijie.dev/2024/08/03/essay-vex-community/
+https://peijie.dev/2024/08/27/essay-why-engineering/
 https://peijie.dev/2025/09/18/essay-digital-outcast/
 https://peijie.dev/2022/01/12/note-DAC729-Vintage-R2R-Decoder/
 https://peijie.dev/2026/02/03/note-ServoShield/
@@ -30,10 +30,10 @@ https://peijie.dev/tags/Communication/
 https://peijie.dev/tags/Family/
 https://peijie.dev/tags/College-Application/
 https://peijie.dev/tags/Diving/
-https://peijie.dev/tags/Audio-Engineering/
-https://peijie.dev/tags/Entrepreneurship/
 https://peijie.dev/tags/Robotics/
 https://peijie.dev/tags/Leadership/
+https://peijie.dev/tags/Audio-Engineering/
+https://peijie.dev/tags/Entrepreneurship/
 https://peijie.dev/tags/Audio-Electronics/
 https://peijie.dev/tags/Vintage-Hardware/
 https://peijie.dev/tags/DAC/
@@ -51,10 +51,10 @@ https://peijie.dev/tags/Protoboard/
 https://peijie.dev/tags/Testing/
 https://peijie.dev/tags/Signal-Analyzer/
 https://peijie.dev/tags/RF/
-https://peijie.dev/tags/Analog-Design/
-https://peijie.dev/tags/Hi-Fi/
 https://peijie.dev/tags/Avionics/
 https://peijie.dev/tags/YJSP/
+https://peijie.dev/tags/Analog-Design/
+https://peijie.dev/tags/Hi-Fi/
 https://peijie.dev/tags/Energy-Harvesting/
 https://peijie.dev/tags/Medical-Devices/
 https://peijie.dev/tags/RoboMaster/

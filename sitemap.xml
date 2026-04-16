@@ -29,15 +29,6 @@
   </url>
   
   <url>
-    <loc>https://peijie.dev/about/index.html</loc>
-    
-    <lastmod>2026-04-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://peijie.dev/archives/index.html</loc>
     
     <lastmod>2026-04-16</lastmod>
@@ -47,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://peijie.dev/career/index.html</loc>
+    <loc>https://peijie.dev/about/index.html</loc>
     
     <lastmod>2026-04-16</lastmod>
     
@@ -57,6 +48,15 @@
   
   <url>
     <loc>https://peijie.dev/categories/index.html</loc>
+    
+    <lastmod>2026-04-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijie.dev/career/index.html</loc>
     
     <lastmod>2026-04-16</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://peijie.dev/2025/08/23/essay-letter-to-instructor/</loc>
+    <loc>https://peijie.dev/2025/09/18/essay-digital-outcast/</loc>
     
     <lastmod>2026-04-16</lastmod>
     
@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://peijie.dev/2024/07/28/essay-online-community/</loc>
+    <loc>https://peijie.dev/2025/08/23/essay-letter-to-instructor/</loc>
     
     <lastmod>2026-04-16</lastmod>
     
@@ -146,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://peijie.dev/2025/09/18/essay-digital-outcast/</loc>
+    <loc>https://peijie.dev/2024/07/28/essay-online-community/</loc>
     
     <lastmod>2026-04-16</lastmod>
     
@@ -433,20 +433,6 @@
   </url>
   
   <url>
-    <loc>https://peijie.dev/tags/Energy-Harvesting/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/tags/Medical-Devices/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://peijie.dev/tags/Analog-Design/</loc>
     <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -469,6 +455,20 @@
   
   <url>
     <loc>https://peijie.dev/tags/CAN-Bus/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijie.dev/tags/Energy-Harvesting/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijie.dev/tags/Medical-Devices/</loc>
     <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

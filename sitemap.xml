@@ -38,7 +38,16 @@
   </url>
   
   <url>
-    <loc>https://peijie.dev/archives/index.html</loc>
+    <loc>https://peijie.dev/categories/index.html</loc>
+    
+    <lastmod>2026-04-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijie.dev/contact/index.html</loc>
     
     <lastmod>2026-04-17</lastmod>
     
@@ -56,16 +65,7 @@
   </url>
   
   <url>
-    <loc>https://peijie.dev/categories/index.html</loc>
-    
-    <lastmod>2026-04-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/contact/index.html</loc>
+    <loc>https://peijie.dev/archives/index.html</loc>
     
     <lastmod>2026-04-17</lastmod>
     
@@ -93,24 +93,6 @@
   
   <url>
     <loc>https://peijie.dev/2026/01/26/note-TackyAstroach/</loc>
-    
-    <lastmod>2026-04-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/2026/04/17/essay-engl1102_podcast/</loc>
-    
-    <lastmod>2026-04-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/2025/08/23/essay-letter-to-instructor/</loc>
     
     <lastmod>2026-04-17</lastmod>
     
@@ -147,6 +129,24 @@
   
   <url>
     <loc>https://peijie.dev/2024/08/27/essay-why-engineering/</loc>
+    
+    <lastmod>2026-04-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijie.dev/2026/04/17/essay-engl1102_podcast/</loc>
+    
+    <lastmod>2026-04-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijie.dev/2025/08/23/essay-letter-to-instructor/</loc>
     
     <lastmod>2026-04-17</lastmod>
     
@@ -218,41 +218,6 @@
 
   
   <url>
-    <loc>https://peijie.dev/tags/Personal/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/tags/Reflection/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/tags/Engineering/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/tags/Community/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/tags/Identity/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://peijie.dev/tags/ENGL1102/</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -281,14 +246,14 @@
   </url>
   
   <url>
-    <loc>https://peijie.dev/tags/Communication/</loc>
+    <loc>https://peijie.dev/tags/Personal/</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://peijie.dev/tags/Family/</loc>
+    <loc>https://peijie.dev/tags/Reflection/</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -296,6 +261,20 @@
   
   <url>
     <loc>https://peijie.dev/tags/College-Application/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijie.dev/tags/Engineering/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijie.dev/tags/Community/</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -337,42 +316,14 @@
   </url>
   
   <url>
-    <loc>https://peijie.dev/tags/Audio-Electronics/</loc>
+    <loc>https://peijie.dev/tags/Communication/</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://peijie.dev/tags/Vintage-Hardware/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/tags/DAC/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/tags/NOS-Design/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/tags/Quick-Note/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://peijie.dev/tags/Platform-Migration/</loc>
+    <loc>https://peijie.dev/tags/Family/</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -401,6 +352,13 @@
   
   <url>
     <loc>https://peijie.dev/tags/Servo-Control/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijie.dev/tags/Quick-Note/</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -470,6 +428,13 @@
   </url>
   
   <url>
+    <loc>https://peijie.dev/tags/Audio-Electronics/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://peijie.dev/tags/Analog-Design/</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -506,6 +471,41 @@
   
   <url>
     <loc>https://peijie.dev/tags/CAN-Bus/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijie.dev/tags/Identity/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijie.dev/tags/Vintage-Hardware/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijie.dev/tags/DAC/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijie.dev/tags/NOS-Design/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://peijie.dev/tags/Platform-Migration/</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

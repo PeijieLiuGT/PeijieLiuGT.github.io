@@ -113,6 +113,8 @@
       
         <tags>
             
+            <tag> Quick Note </tag>
+            
             <tag> PCB Design </tag>
             
             <tag> Power Electronics </tag>
@@ -120,8 +122,6 @@
             <tag> Arduino </tag>
             
             <tag> Servo Control </tag>
-            
-            <tag> Quick Note </tag>
             
         </tags>
       
@@ -278,9 +278,9 @@
       
         <tags>
             
-            <tag> PCB Design </tag>
-            
             <tag> Audio Electronics </tag>
+            
+            <tag> PCB Design </tag>
             
             <tag> Analog Design </tag>
             
@@ -439,11 +439,11 @@
             
             <tag> Reflection </tag>
             
-            <tag> College Application </tag>
-            
             <tag> Engineering </tag>
             
             <tag> Community </tag>
+            
+            <tag> College Application </tag>
             
         </tags>
       
@@ -468,8 +468,6 @@
       
         <tags>
             
-            <tag> Quick Note </tag>
-            
             <tag> Audio Electronics </tag>
             
             <tag> Vintage Hardware </tag>
@@ -477,6 +475,8 @@
             <tag> DAC </tag>
             
             <tag> NOS Design </tag>
+            
+            <tag> Quick Note </tag>
             
             <tag> Platform Migration </tag>
             

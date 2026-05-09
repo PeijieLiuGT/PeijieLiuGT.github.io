@@ -51,9 +51,9 @@
       
         <tags>
             
-            <tag> PCB Design </tag>
-            
             <tag> Embedded Systems </tag>
+            
+            <tag> PCB Design </tag>
             
             <tag> RoboMaster </tag>
             
@@ -82,9 +82,9 @@
       
         <tags>
             
-            <tag> PCB Design </tag>
-            
             <tag> Embedded Systems </tag>
+            
+            <tag> PCB Design </tag>
             
             <tag> Avionics </tag>
             
@@ -148,11 +148,11 @@
             
             <tag> Robotics </tag>
             
-            <tag> Quick Note </tag>
-            
             <tag> Embedded Systems </tag>
             
             <tag> Hackathon </tag>
+            
+            <tag> Quick Note </tag>
             
             <tag> ESP32 </tag>
             
@@ -181,13 +181,13 @@
       
         <tags>
             
-            <tag> PCB Design </tag>
-            
-            <tag> Power Electronics </tag>
-            
             <tag> Embedded Systems </tag>
             
+            <tag> PCB Design </tag>
+            
             <tag> Energy Harvesting </tag>
+            
+            <tag> Power Electronics </tag>
             
             <tag> Medical Devices </tag>
             
@@ -278,9 +278,9 @@
       
         <tags>
             
-            <tag> Audio Electronics </tag>
-            
             <tag> PCB Design </tag>
+            
+            <tag> Audio Electronics </tag>
             
             <tag> Analog Design </tag>
             
@@ -468,6 +468,8 @@
       
         <tags>
             
+            <tag> Quick Note </tag>
+            
             <tag> Audio Electronics </tag>
             
             <tag> Vintage Hardware </tag>
@@ -475,8 +477,6 @@
             <tag> DAC </tag>
             
             <tag> NOS Design </tag>
-            
-            <tag> Quick Note </tag>
             
             <tag> Platform Migration </tag>
             
